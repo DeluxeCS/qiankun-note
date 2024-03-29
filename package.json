@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "install:campusGang": "cd campus-gang && npm install",
+    "install:chargeBack": "cd charge-back && npm install",
+    "install:main": "cd collage-main && npm install",
+    "install-all": "npm-run-all install:*",
+    "start:campusGang": "cd campus-gang && npm run serve ",
+    "start:chargeBack": "cd charge-back && npm run serve",
+    "start:main": "cd collage-main && npm run serve",
+    "start-all": "npm-run-all --parallel start:*",
+    "serve-all": "npm-run-all --parallel start:*",
+    "build:campusGang": "cd campus-gang && npm run build",
+    "build:chargeBack": "cd charge-back && npm run build",
+    "build:main": "cd collage-main && npm run build",
+    "build-all": "npm-run-all --parallel build:*"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
